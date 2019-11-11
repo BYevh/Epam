@@ -5,7 +5,6 @@ import java.util.Random;
 
 public class HW1 {
     public static void main(String[] args) throws IOException {
-        //try new branch
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int random = new Random().nextInt(1000);
         System.out.println(random);
