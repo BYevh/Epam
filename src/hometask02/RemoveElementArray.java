@@ -26,7 +26,10 @@ public class RemoveElementArray {
             }
         }
 
-        System.out.println(Arrays.toString(ints));
+        for (int i = 0; i < newLength; i++) {
+            System.out.print(ints[i] + " ");
+        }
+        System.out.println();
 
         return newLength;
     }
