@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class RemoveElementArray {
     public static void main(String[] args) {
 
-        int[] ints = {0, 1, 2, 2, 3, 0, 4, 0};
+        int[] ints = {0, 1, 2, 2, 3, 0, 4, 2};
         int val = 2;
         System.out.println(removeElement(ints, val));
 
