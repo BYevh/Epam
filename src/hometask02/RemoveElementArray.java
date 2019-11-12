@@ -12,6 +12,7 @@ public class RemoveElementArray {
     }
 
     public static int removeElement(int[] ints, int val) {
+
         int newLength = ints.length;
 
         for (int i = 0; i < ints.length; i++) {
