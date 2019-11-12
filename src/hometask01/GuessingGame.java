@@ -1,9 +1,11 @@
+package hometask01;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Random;
 
-public class HW1 {
+public class GuessingGame {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int random = new Random().nextInt(1000);
