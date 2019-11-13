@@ -3,13 +3,13 @@ package hometask02;
 import java.util.Arrays;
 
 public class SpecificTarget {
-    public static void main(String[] args) {
-
-        int[] ints = {2, 7, 11, 15};
-        int target = 9;
-        System.out.println(Arrays.toString(target(ints, target)));
-
-    }
+//    public static void main(String[] args) {
+//
+//        int[] ints = {2, 7, 11, 15};
+//        int target = 9;
+//        System.out.println(Arrays.toString(target(ints, target)));
+//
+//    }
 
     public static int[] target(int[] ints, int target) {
         int[] result = new int[2];

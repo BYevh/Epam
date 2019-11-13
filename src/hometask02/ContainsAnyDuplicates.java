@@ -2,10 +2,10 @@ package hometask02;
 
 public class ContainsAnyDuplicates {
 
-    public static void main(String[] args) {
-        int[] ints = {1, 2, 3, 4};
-        System.out.println(duplicates(ints));
-    }
+//    public static void main(String[] args) {
+//        int[] ints = {1, 2, 3, 4};
+//        System.out.println(duplicates(ints));
+//    }
 
     public static boolean duplicates(int[] ints) {
         for (int i = 0; i < ints.length - 1; i++) {
