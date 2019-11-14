@@ -1,5 +1,4 @@
-package hometask02;
-
+import hometask02.PlusOneToArray;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
