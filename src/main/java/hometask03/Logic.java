@@ -4,11 +4,15 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Logic {
+
     private String result;
+
+
     private static final String INPUT_ANSWER = "\nInput your number (1-rock / 2-paper / 3-scissors / 0 - exit):";
     private static final String WINNER = "Winner: ";
     private static final String MASSAGE_TIE = "A tie!";
     private static final String MASSAGE_ERROR1 = "That not a number!";
+
 
     //input and validation
     public int number(){
@@ -42,10 +46,16 @@ public class Logic {
             result = (deltaP > 0) ? (WINNER + player2.getName()) : (WINNER + player1.getName());
             ;
         }
+//        //The game score. not working yet
+//        if (result.equals((WINNER + player1.getName()))) {
+//            player1.incScore();
+//        } else {
+//            player2.incScore();
+//        }
         return result;
     }
 
-// random number
+    // random number
     public int diceRoll() {
         Random random = new Random();
         return (random.nextInt(3) + 1);

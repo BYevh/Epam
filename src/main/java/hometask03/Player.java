@@ -3,6 +3,17 @@ package hometask03;
 public class Player {
     private String name;
     private Result nameOfResult;
+    private int score = 0;
+
+
+    public int getScore() {
+        return score;
+    }
+
+    public void incScore() {
+        this.score++;
+    }
+
 
     public Player(String name) {
         this.name = name;
