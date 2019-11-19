@@ -1,4 +1,4 @@
-package hometask03;
+package ua.epam.javacore.hometask03;
 
 public class Player {
     private String name;

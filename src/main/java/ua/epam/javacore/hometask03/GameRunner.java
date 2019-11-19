@@ -1,4 +1,4 @@
-package hometask03;
+package ua.epam.javacore.hometask03;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package hometask03;
+package ua.epam.javacore.hometask03;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -46,12 +46,6 @@ public class Logic {
             result = (deltaP > 0) ? (WINNER + player2.getName()) : (WINNER + player1.getName());
             ;
         }
-//        //The game score. not working yet
-//        if (result.equals((WINNER + player1.getName()))) {
-//            player1.incScore();
-//        } else {
-//            player2.incScore();
-//        }
         return result;
     }
 

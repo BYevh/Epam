@@ -1,15 +1,8 @@
-package hometask02;
-
-import java.util.Arrays;
+package ua.epam.javacore.hometask02;
 
 public class PlusOneToArray {
 
-//    public static void main(String[] args) {
-//        int[] ints = {9, 9, 9, 9, 9};
-//        System.out.println(Arrays.toString(plusToArray(ints)));
-//    }
-
-    public static int[] plusToArray(int[] ints) {
+    public int[] plusToArray(int[] ints) {
         int i = 1;
         int number = 1;
 

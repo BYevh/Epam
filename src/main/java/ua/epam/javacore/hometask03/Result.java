@@ -1,4 +1,4 @@
-package hometask03;
+package ua.epam.javacore.hometask03;
 
 public enum Result {
     ROCK(1),

@@ -1,4 +1,4 @@
-package hometask01;
+package ua.epam.javacore.hometask01;
 
 import java.io.BufferedReader;
 import java.io.IOException;
