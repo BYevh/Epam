@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 
 class LogicTest {
 
+    // тесты еще добавлю!!
 
     @Test
     void number() {
