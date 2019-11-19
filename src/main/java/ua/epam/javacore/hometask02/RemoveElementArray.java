@@ -3,7 +3,7 @@ package ua.epam.javacore.hometask02;
 public class RemoveElementArray {
 
     public int removeElement(int[] ints, int val) {
-
+        if(ints==null || ints.length==0) return 0;
         int newLength = ints.length;
 
         for (int i = 0; i < ints.length; i++) {

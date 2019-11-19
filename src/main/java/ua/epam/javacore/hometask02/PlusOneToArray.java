@@ -3,6 +3,7 @@ package ua.epam.javacore.hometask02;
 public class PlusOneToArray {
 
     public int[] plusToArray(int[] ints) {
+        if(ints==null || ints.length==0) return new int[0];
         int i = 1;
         int number = 1;
 

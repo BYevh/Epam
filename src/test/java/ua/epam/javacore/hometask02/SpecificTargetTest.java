@@ -15,4 +15,14 @@ class SpecificTargetTest {
         int[]expect = {0, 1};
         assertArrayEquals(expect, actual);
     }
+
+    @Test
+    void target_NULL() {
+        SpecificTarget specificTarget = new SpecificTarget();
+        int[] ints = null;
+        int target = 0;
+        int[]actual = specificTarget.target(ints, target);
+        int[]expect = new int[0];
+        assertArrayEquals(expect, actual);
+    }
 }

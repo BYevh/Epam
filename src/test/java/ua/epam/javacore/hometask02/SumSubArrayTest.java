@@ -13,4 +13,13 @@ class SumSubArrayTest {
         int actual = sumSubArray.sumSubArray(ints);
         assertEquals(expect, actual);
     }
+
+    @Test
+    void sumSubArray_NULL() {
+        SumSubArray sumSubArray = new SumSubArray();
+        int[] ints = null;
+        int expect = 0;
+        int actual = sumSubArray.sumSubArray(ints);
+        assertEquals(expect, actual);
+    }
 }

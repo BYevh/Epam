@@ -1,15 +1,16 @@
 package ua.epam.javacore.hometask02;
 
+import org.junit.Before;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;
 
 class ContainsAnyDuplicatesTest {
 
+    ContainsAnyDuplicates duplicates = new ContainsAnyDuplicates();
 
     @Test
     void duplicates() {
-        ContainsAnyDuplicates duplicates = new ContainsAnyDuplicates();
         int[] input = {1, 2, 3, 4};
         boolean expect = false;
         boolean actual = duplicates.duplicates(input);
@@ -18,7 +19,6 @@ class ContainsAnyDuplicatesTest {
 
     @Test
     public void duplicates_NULL() {
-        ContainsAnyDuplicates duplicates = new ContainsAnyDuplicates();
         boolean expect = false;
         boolean actual = duplicates.duplicates(null);
         assertEquals(expect, actual);

@@ -16,4 +16,15 @@ class RemoveElementArrayTest {
         assertEquals(expect, actual);
 
     }
+
+    @Test
+    void removeElement_NULL() {
+        RemoveElementArray removeElementArray = new RemoveElementArray();
+        int[] ints = null;
+        int val = 0;
+        int expect = 0;
+        int actual = removeElementArray.removeElement(ints, val);
+        assertEquals(expect, actual);
+
+    }
 }

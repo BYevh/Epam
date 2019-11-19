@@ -6,13 +6,21 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class PlusOneToArrayTest {
 
+    PlusOneToArray plusOneToArray = new PlusOneToArray();
 
     @Test
     void plusToArray() {
-        PlusOneToArray plusOneToArray = new PlusOneToArray();
         int[] ints = {9, 9, 9, 9, 9};
         int[]actual = plusOneToArray.plusToArray(ints);
         int[]expect = {1, 0, 0, 0, 0, 0};
+        assertArrayEquals(expect, actual);
+    }
+
+    @Test
+    void plusToArray_NULL() {
+        int[] ints = {9, 9, 9, 9, 9};
+        int[]actual = plusOneToArray.plusToArray(null);
+        int[]expect = new int[0];
         assertArrayEquals(expect, actual);
     }
 }
