@@ -3,7 +3,9 @@ package ua.epam.javacore.hometask04.receipt;
 import java.util.Scanner;
 
 public class Input {
+
     Scanner scanner = new Scanner(System.in);
+
     private static final String MASSAGE_ERROR1 = "Only number!";
     private static final String MASSAGE_TOTAL_AMOUNT = "Enter total amount: ";
 
