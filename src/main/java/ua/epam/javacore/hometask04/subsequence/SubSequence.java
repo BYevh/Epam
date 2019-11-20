@@ -2,12 +2,8 @@ package ua.epam.javacore.hometask04.subsequence;
 
 public class SubSequence {
 
-    public static void main(String[] args) {
 
-        System.out.println(subSequence("qwerty", "qwerty"));
-    }
-
-    public static String subSequence(String s1, String s2) {
+    public String subSequence(String s1, String s2) {
         int lengthSubString = 0;
         String mySubString = "";
         String longStr;
@@ -22,8 +18,7 @@ public class SubSequence {
         }
 
         for (int i = 0; i < shortStr.length(); i++) {
-            for (int j = 0; j <= i; j++) {
-                if (j >= i) break;
+            for (int j = 0; j < i; j++) {
                 String subStrShort = shortStr.substring(j, (i + 1));
                 if (longStr.contains(subStrShort) & (subStrShort.length() > lengthSubString)) {
                     mySubString = subStrShort;
