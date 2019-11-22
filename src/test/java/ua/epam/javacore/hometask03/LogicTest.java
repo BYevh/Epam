@@ -3,19 +3,32 @@ package ua.epam.javacore.hometask03;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
+import java.io.ByteArrayInputStream;
+
 class LogicTest {
 
-    // тесты еще добавлю!!
+
 
     @Test
-    void number() {
+    void number_NOT_NULL() {
+        ByteArrayInputStream in = new ByteArrayInputStream("1".getBytes());
+        System.setIn(in);
         Logic logic = new Logic();
-
-
+        Assert.assertNotNull(logic.number());
+        System.setIn(System.in);
     }
 
+
     @Test
-    void resultOfRolls() {
+    void resultOfRolls_RIGHT_NAME_WINNER() {
+        Logic logic = new Logic();
+        Player p1 = new Player("Name1");
+        Player p2 = new Player("Name2");
+        p1.setNameOfResult(1);
+        p2.setNameOfResult(2);
+        String actual = logic.resultOfRolls(p1, p2);
+        String expexted = "Winner: " + p2.getName();
+        Assert.assertEquals (expexted , actual);
 
     }
 
