@@ -27,8 +27,8 @@ class LogicTest {
         p1.setNameOfResult(1);
         p2.setNameOfResult(2);
         String actual = logic.resultOfRolls(p1, p2);
-        String expexted = "Winner: " + p2.getName();
-        Assert.assertEquals (expexted , actual);
+        String expected = "Winner: " + p2.getName();
+        Assert.assertEquals (expected , actual);
 
     }
 

@@ -15,6 +15,7 @@ public class BusinessLogic {
     }
 
     public double logicDiscount(double totalAmount) {
+        if(totalAmount == 0) return 0;
         double discount;
 
         if (totalAmount <= 500) {
