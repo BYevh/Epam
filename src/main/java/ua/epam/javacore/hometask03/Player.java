@@ -2,7 +2,7 @@ package ua.epam.javacore.hometask03;
 
 public class Player {
     private String name;
-    private Result nameOfResult;
+    private NameOfResults results;
     private int score = 0;
 
 
@@ -23,22 +23,22 @@ public class Player {
         return name;
     }
 
-    public Result getNameOfResult() {
-        return nameOfResult;
+    public NameOfResults getResults() {
+        return results;
     }
 
-    public void setNameOfResult(int nameOfResult) {
-        switch (nameOfResult) {
+    public void setResults(int results) {
+        switch (results) {
             case 1: {
-                this.nameOfResult = Result.ROCK;
+                this.results = this.results.ROCK;
                 break;
             }
             case 2: {
-                this.nameOfResult = Result.PAPER;
+                this.results = this.results.PAPER;
                 break;
             }
             case 3: {
-                this.nameOfResult = Result.SCISSORS;
+                this.results = this.results.SCISSORS;
                 break;
             }
         }

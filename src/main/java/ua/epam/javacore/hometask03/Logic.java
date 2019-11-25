@@ -27,11 +27,11 @@ public class Logic {
             int number = number();                                              // input throw number
             if (number == 0) break;                                                     // 0 - exit
 
-            player1.setNameOfResult(number);                                            //enter the entered result
-            player2.setNameOfResult(diceRoll());                                //enter the random result
+            player1.setResults(number);                                            //enter the entered result
+            player2.setResults(diceRoll());                                //enter the random result
 
-            System.out.println(player1.getName() + " : " + player1.getNameOfResult());  // display throws on the screen
-            System.out.println(player2.getName() + " : " + player2.getNameOfResult());
+            System.out.println(player1.getName() + " : " + player1.getResults());  // display throws on the screen
+            System.out.println(player2.getName() + " : " + player2.getResults());
             System.out.println(resultOfRolls(player1, player2));                // determine the winner
         }
     }
@@ -55,8 +55,8 @@ public class Logic {
     //  check the winner
     public String resultOfRolls(Player player1, Player player2) {
 
-        int p1 = player1.getNameOfResult().getCode();
-        int p2 = player2.getNameOfResult().getCode();
+        int p1 = player1.getResults().getCode();
+        int p2 = player2.getResults().getCode();
         int deltaP = p1 - p2;
 
         if (deltaP == 0) {

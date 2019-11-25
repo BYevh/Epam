@@ -1,13 +1,13 @@
 package ua.epam.javacore.hometask03;
 
-public enum Result {
+public enum NameOfResults {
     ROCK(1),
     PAPER(2),
     SCISSORS(3);
 
     private int code;
 
-    Result(int code) {
+    NameOfResults(int code) {
         this.code = code;
     }
 

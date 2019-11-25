@@ -24,8 +24,8 @@ class LogicTest {
         Logic logic = new Logic();
         Player p1 = new Player("Name1");
         Player p2 = new Player("Name2");
-        p1.setNameOfResult(1);
-        p2.setNameOfResult(2);
+        p1.setResults(1);
+        p2.setResults(2);
         String actual = logic.resultOfRolls(p1, p2);
         String expected = "Winner: " + p2.getName();
         Assert.assertEquals (expected , actual);
