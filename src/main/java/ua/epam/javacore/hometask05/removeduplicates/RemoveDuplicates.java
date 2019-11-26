@@ -5,13 +5,13 @@ import java.util.Collections;
 
 public class RemoveDuplicates {
 
-    public ArrayList removeDuplicates(ArrayList list) {
+    public int removeDuplicates(ArrayList list) {
         for (int i = 0; i < list.size()-1 ; i++) {
             if (list.get(i) == list.get(i+1)){
                 list.remove(i);
                 i--;
             }
         }
-        return list;
+        return list.size();
     }
 }
