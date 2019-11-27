@@ -6,6 +6,10 @@ public class PartitionList {
 
     public LinkedList partitionList(LinkedList<Integer> myList, int partition) {
 
+        if (myList == null){
+            return  new LinkedList();
+        }
+
         int indexOfPartition = myList.indexOf(partition);
         int temp;
 

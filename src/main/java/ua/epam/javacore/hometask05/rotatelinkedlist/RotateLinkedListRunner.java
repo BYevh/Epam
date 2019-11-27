@@ -1,6 +1,7 @@
 package ua.epam.javacore.hometask05.rotatelinkedlist;
 
 import java.util.LinkedList;
+import java.util.SortedMap;
 
 public class RotateLinkedListRunner {
 
@@ -17,8 +18,8 @@ public class RotateLinkedListRunner {
         int rotates = 2;
 
         RotateLinkedList linkedList = new RotateLinkedList();
-        linkedList.rotateLinkedList(myList, rotates);
-        System.out.println(myList);
+        System.out.println(linkedList.rotateLinkedList(myList, rotates));
+
     }
 
 
