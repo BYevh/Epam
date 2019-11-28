@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 public class RotateLinkedList {
 
-    public LinkedList rotateLinkedList(LinkedList list, int n) {
+    public LinkedList rotateLinkedList(LinkedList <String> list, int n) {
         if (list == null){
             return new LinkedList();
         }

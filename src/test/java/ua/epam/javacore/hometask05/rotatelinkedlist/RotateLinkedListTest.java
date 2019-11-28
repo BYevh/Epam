@@ -17,12 +17,12 @@ class RotateLinkedListTest {
     @Test
     void rotateLinkedList_RIGHT_ANSWER() {
         RotateLinkedList list = new RotateLinkedList();
-        LinkedList myList = new LinkedList<String>();
+        LinkedList<String> myList = new LinkedList<String>();
         myList.add("one");
         myList.add("two");
         myList.add("three");
         LinkedList actual = list.rotateLinkedList(myList, 1);
-        LinkedList expected = new LinkedList(Arrays.asList("three", "one", "two"));
+        LinkedList<String> expected = new LinkedList<String>(Arrays.asList("three", "one", "two"));
         Assert.assertEquals(expected, actual);
     }
 }
