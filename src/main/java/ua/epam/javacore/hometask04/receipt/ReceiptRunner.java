@@ -4,7 +4,8 @@ public class ReceiptRunner {
     public static void main(String[] args) {
 
         BusinessLogic businessLogic = new BusinessLogic();
-        System.out.println(businessLogic.createReceipt());
+        AppView appView = new AppView();
+        appView.viewReceipt(businessLogic.createReceipt(appView.inputTotalAmount()));
 
     }
 }

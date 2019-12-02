@@ -12,10 +12,7 @@ class BusinessLogicTest {
     @Test
     void createReceipt_NOT_NULL() {
         BusinessLogic businessLogic = new BusinessLogic();
-        ByteArrayInputStream in = new ByteArrayInputStream("500".getBytes());
-        System.setIn(in);
-        Assert.assertNotNull(businessLogic.createReceipt());
-        System.setIn(System.in);
+        Assert.assertNotNull(businessLogic.createReceipt(500));
     }
 
     @Test

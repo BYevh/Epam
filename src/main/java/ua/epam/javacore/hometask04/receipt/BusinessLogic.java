@@ -4,18 +4,16 @@ import java.util.Date;
 
 public class BusinessLogic {
 
-    public Receipt createReceipt() {
-        Receipt receipt = new Receipt();
-        Input input = new Input();
+    public Receipt createReceipt(double amount) {
+        Receipt receipt = new Receipt(amount);
         receipt.setDate(new Date());
-        receipt.setTotalAmount(input.inputTotalAmount());
         receipt.setDiscount(logicDiscount(receipt.getTotalAmount()));
         receipt.setAmountWithDiscount((1 - receipt.getDiscount() / 100) * receipt.getTotalAmount());
         return receipt;
     }
 
     public double logicDiscount(double totalAmount) {
-        if(totalAmount == 0) return 0;
+        if (totalAmount == 0) return 0;
         double discount;
 
         if (totalAmount <= 500) {

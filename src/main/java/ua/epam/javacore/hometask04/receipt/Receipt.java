@@ -8,6 +8,10 @@ public class Receipt {
     private double discount;
     private double amountWithDiscount;
 
+    public Receipt(double totalAmount) {
+        this.totalAmount = totalAmount;
+    }
+
     public Date getDate() {
         return date;
     }

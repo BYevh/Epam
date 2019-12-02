@@ -4,17 +4,14 @@ import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class InputTest {
+class AppViewTest {
 
     @Test
     void inputTotalAmount_RIGHT_RETURN() {
         ByteArrayInputStream in = new ByteArrayInputStream("500".getBytes());
         System.setIn(in);
-        Input input= new Input();
+        AppView input = new AppView();
         Double actual = input.inputTotalAmount();
         Double expected = 500.0d;
         Assert.assertEquals(actual, expected);
