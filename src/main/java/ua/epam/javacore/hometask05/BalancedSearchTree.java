@@ -1,4 +1,4 @@
-package ua.epam.javacore.hometask05.balancedsearchtree;
+package ua.epam.javacore.hometask05;
 
 import java.util.ArrayList;
 import java.util.TreeSet;

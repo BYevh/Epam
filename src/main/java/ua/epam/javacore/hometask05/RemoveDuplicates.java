@@ -1,4 +1,4 @@
-package ua.epam.javacore.hometask05.removeduplicates;
+package ua.epam.javacore.hometask05;
 
 import java.util.ArrayList;
 import java.util.Collections;

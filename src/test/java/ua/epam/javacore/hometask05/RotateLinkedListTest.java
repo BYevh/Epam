@@ -1,7 +1,8 @@
-package ua.epam.javacore.hometask05.rotatelinkedlist;
+package ua.epam.javacore.hometask05;
 
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
+import ua.epam.javacore.hometask05.RotateLinkedList;
 
 import java.util.Arrays;
 import java.util.LinkedList;

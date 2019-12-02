@@ -1,4 +1,4 @@
-package ua.epam.javacore.hometask05.partitionlist;
+package ua.epam.javacore.hometask05;
 
 import java.util.LinkedList;
 

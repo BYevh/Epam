@@ -1,4 +1,4 @@
-package ua.epam.javacore.hometask05.rotatelinkedlist;
+package ua.epam.javacore.hometask05;
 
 import java.util.LinkedList;
 

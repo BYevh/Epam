@@ -1,12 +1,11 @@
-package ua.epam.javacore.hometask05.partitionlist;
+package ua.epam.javacore.hometask05;
 
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
+import ua.epam.javacore.hometask05.PartitionList;
 
 import java.util.Arrays;
 import java.util.LinkedList;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class PartitionListTest {
 
