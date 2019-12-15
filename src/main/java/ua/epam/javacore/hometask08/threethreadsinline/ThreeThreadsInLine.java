@@ -9,13 +9,12 @@ public class ThreeThreadsInLine {
 
     public static ThreeThreadsInLine instance;
 
-    public static synchronized ThreeThreadsInLine getInstance(){
-        if (instance == null ) {
+    public static synchronized ThreeThreadsInLine getInstance() {
+        if (instance == null) {
             instance = new ThreeThreadsInLine();
         }
         return instance;
     }
-
 
 
     public void first() throws InterruptedException {

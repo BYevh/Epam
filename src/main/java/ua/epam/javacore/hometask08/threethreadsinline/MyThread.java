@@ -1,10 +1,8 @@
 package ua.epam.javacore.hometask08.threethreadsinline;
 
-import org.jetbrains.annotations.NotNull;
-
 public class MyThread extends Thread {
 
-    public MyThread(@NotNull String name) {
+    public MyThread(String name) {
         super(name);
     }
 
