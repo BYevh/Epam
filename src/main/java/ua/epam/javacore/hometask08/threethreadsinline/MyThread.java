@@ -2,6 +2,8 @@ package ua.epam.javacore.hometask08.threethreadsinline;
 
 public class MyThread extends Thread {
 
+    //3 threads call. Each thread have to be named - 1 or 2 or 3, it depends on what it wants to output
+
     public MyThread(String name) {
         super(name);
     }
