@@ -9,14 +9,19 @@ VALUES ('Java'),
        ('Kotlin');
 
 
-INSERT INTO developers (first_name, second_name, account)
-VALUES ('Sergey', 'Ivanov', 'ACTIVE'),
-       ('Pavel', 'Petrov', 'ACTIVE'),
-       ('Yuriy', 'Luzhkov', 'BANNED');
+INSERT INTO developers (first_name, second_name, account_id)
+VALUES ('Sergey', 'Ivanov', 1),
+       ('Pavel', 'Petrov', 2),
+       ('Yuriy', 'Luzhkov', 3);
 
 
-INSERT INTO skills_of_each_developers(id_developer, first_skill, second_skill)
-VALUES (1, 1, 2),
-       (2, 1, 3),
-       (3, 1, 5);
+INSERT INTO developer_skills(developer_id, skill_id)
+VALUES (1, 1),
+       (1, 2),
+       (2, 1),
+       (3, 1);
 
+INSERT INTO accounts (id, name,  status)
+VALUES (1, 'Sergey Ivanov', 'ACTIVE'),
+       (2, 'Pavel Petrov', 'DELETE'),
+       (3, 'Yuriy Luzhkov', 'BANNED');
